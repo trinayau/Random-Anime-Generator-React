@@ -1,2 +1,2 @@
 # Random Anime Generator React
- React App using Jikan API
+ React App using Jikan API.
