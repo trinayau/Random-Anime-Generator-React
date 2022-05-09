@@ -61,6 +61,7 @@ body {
     position: relative;
     width: 662px;
     height: 517px;
+    cursor: pointer;
 }
 
 /* info page */
@@ -87,9 +88,9 @@ body {
 
 .randomPage{
     background-color: #F4F1DE;
-    height: fit-content;
+    height: max-content;
     width: 100%;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -104,16 +105,24 @@ body {
 }
 
 .random-container img{
+    display: flex;
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 .show-card {
-    height: 400px;
-    width:800px;
+    height: auto;
+    width: 500px;
     background-color: #F2CC8F;
     border-radius: 15px;
     margin-right: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
 
 }
 
@@ -126,7 +135,7 @@ body {
 
 .show-card button {
     color: #E07A5F;
-    padding: 5px 30px;
+    
     font-family: var(--font-primary);
     font-weight: 700;
     border-radius: 12px;
@@ -158,16 +167,54 @@ body {
     align-items: center;
     
 }
-#doggos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    color: black;
- 
-}
 
 
+/* create new blog form */
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .create label {
+    text-align: left;
+    display: block;
+  }
+  .create h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 30px;
+  }
+  .create input, .create textarea, .create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  .create button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 
+  /* not found page*/
+  .not-found{
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }
+
+  .not-found a{
+      text-decoration: none;
+  }
 
 
 #refresh { font-size: 2rem;}
@@ -175,5 +222,11 @@ body {
 @media screen and (min-width: 700px){
     #doggos {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .random-container{
+        flex-direction: column;
     }
 }

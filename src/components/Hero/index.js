@@ -7,6 +7,10 @@ const Hero = () => {
         const path=`/random`;
         navigate(path);
     }
+
+    function handleDoggo() {
+        navigate('/')
+    }
     return ( 
         <div className='hero'>
 
@@ -15,7 +19,7 @@ const Hero = () => {
         <a href='/'><h1>Random Anime <br/>Generator</h1></a>
         <button onClick={handleClick}>Give me anime!</button>
         </div>
-        <div className='doggo-hero'></div>
+        <div className='doggo-hero' onClick={handleDoggo}></div>
         </div>
         </div>
  );
