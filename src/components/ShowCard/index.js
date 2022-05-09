@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const ShowCard = ({name, summary, score, episodes, aired,images}) => {
+const ShowCard = ({name, summary, score, episodes, aired,images, rating}) => {
 
-    console.log(images.jpg.large_image_url)
+    console.log(rating)
     // const {to} = aired;
     // console.log(to)
     
@@ -25,7 +25,7 @@ const ShowCard = ({name, summary, score, episodes, aired,images}) => {
     }
     return ( 
     <div className="random-container">
-        <article className="show-card">
+        {rating !== "R - 17+ (violence & profanity)" && rating !== "R+ - Mild Nudity" && rating !== "Rx - Hentai" ? <> <article className="show-card">
         <h1>{name}</h1>
         <p>Rating: {score !== null ? score : 'No score :('}</p>
         <p>Episodes: {episodes}</p>
@@ -40,7 +40,8 @@ const ShowCard = ({name, summary, score, episodes, aired,images}) => {
     </article> 
     <div className="random-image">
         <img src={images.jpg.large_image_url}></img>
-    </div>
+    </div></>: <><h1>Oops, please refresh the page!</h1><button className="refresh" onClick={handleNext}>Refresh</button></>}
+       
     </div>);
 }
  

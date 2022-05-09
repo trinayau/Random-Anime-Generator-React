@@ -98,6 +98,8 @@ body {
 
 }
 
+
+
 .random-container{
     display: flex;
     justify-content: center;
@@ -166,6 +168,15 @@ body {
     justify-content: center;
     align-items: center;
     
+}
+
+.refresh {
+        background: #f1356d;
+        color: #fff;
+        border: 0;
+        padding: 8px;
+        border-radius: 8px;
+        cursor: pointer;
 }
 
 

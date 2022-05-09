@@ -29,7 +29,7 @@ const Random = () => {
     
     return ( 
     <div className="randomPage">
-        <ShowCard name={anime.title} summary={anime.synopsis} image={anime.images} score={anime.score} episodes={anime.episodes} aired={anime.aired} images={anime.images}/>
+        <ShowCard name={anime.title} summary={anime.synopsis} image={anime.images} score={anime.score} episodes={anime.episodes} aired={anime.aired} images={anime.images} rating={anime.rating}/>
         </div>
     )
 
