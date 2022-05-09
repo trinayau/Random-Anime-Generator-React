@@ -12,7 +12,7 @@ const Hero = () => {
 
         <div style={{display: "flex"}}>
             <div>
-        <h1>Random Anime <br/>Generator</h1>
+        <a href='/'><h1>Random Anime <br/>Generator</h1></a>
         <button onClick={handleClick}>Give me anime!</button>
         </div>
         <div className='doggo-hero'></div>

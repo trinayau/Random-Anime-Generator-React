@@ -24,9 +24,9 @@ const config = {
   plugins: [
     // plugins we are using to help with compiling
     new HtmlWebpackPlugin({
-      // used to add the JavaScript code to the HTML
-      template: path.join(PUBLIC_DIRECTORY, 'index.html'),
-    }),
+      template: path.join(__dirname, '../public/index.html'),
+      favicon: path.join(__dirname, '../public/favicon.ico')
+  })
   ],
   module: {
     // helpers we want webpack to use

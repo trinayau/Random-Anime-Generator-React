@@ -1,9 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import ShowCard from "../ShowCard";
 
 const Random = () => {
-    return ( <div className="randomPage">
+    const navigate = useNavigate();
 
-    <h1>Random</h1> </div>);
+
+
+    function handleClick() {
+        navigate(-1);
+    }
+    return ( 
+    <div className="randomPage">
+        <ShowCard/>
+        </div>
+    )
+
 }
  
 export default Random;
