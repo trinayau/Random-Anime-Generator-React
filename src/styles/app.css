@@ -214,10 +214,29 @@ body {
 
   .not-found a{
       text-decoration: none;
+ 
   }
 
+  /* Footer*/
 
-#refresh { font-size: 2rem;}
+  footer {
+      padding-bottom: 5px;
+  }
+ footer a:visited{
+      color:#E07A5F;
+  }
+
+    footer a{text-decoration: none;
+        color:#f1356d}
+
+
+/* custom properties*/
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background:#F2CC8F}
+::-webkit-scrollbar-thumb{
+    background: #f1356d;
+    border-radius: 10px;
+}
 
 @media screen and (min-width: 700px){
     #doggos {
