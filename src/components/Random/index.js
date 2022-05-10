@@ -17,9 +17,6 @@ const Random = () => {
             try{
                 const result = await axios.get(`https://api.jikan.moe/v4/random/anime`);
                 setAnime(result.data.data);
-                // console.log(result.data.data)
-               
-                
             }catch(err){
                 console.error(err)
             }

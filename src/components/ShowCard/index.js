@@ -2,13 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const ShowCard = ({name, summary, score, episodes, aired,images, rating}) => {
-
-    console.log(rating)
-    // const {to} = aired;
-    // console.log(to)
-    
     const navigate = useNavigate();
-
+    console.log(rating)
     function handleCreate(){
         navigate('/create')
     }
@@ -25,7 +20,7 @@ const ShowCard = ({name, summary, score, episodes, aired,images, rating}) => {
     }
     return ( 
     <div className="random-container">
-        {rating !== "R - 17+ (violence & profanity)" && rating !== "R+ - Mild Nudity" && rating !== "Rx - Hentai" ? <> <article className="show-card">
+        {rating !== "R+ - Mild Nudity" && rating !== "Rx - Hentai" ? <> <article className="show-card">
         <h1>{name}</h1>
         <p>Rating: {score !== null ? score : 'No score :('}</p>
         <p>Episodes: {episodes}</p>
@@ -40,8 +35,10 @@ const ShowCard = ({name, summary, score, episodes, aired,images, rating}) => {
     </article> 
     <div className="random-image">
         <img src={images.jpg.large_image_url}></img>
-    </div></>: <><h1>Oops, please refresh the page!</h1><button className="refresh" onClick={handleNext}>Refresh</button></>}
-       
+    </div></>:window.location.reload()
+   
+    }
+     {/* <><h1>Oops, please refresh the page!</h1><button className="refresh" onClick={handleNext}>Refresh</button></> */}
     </div>);
 }
  
