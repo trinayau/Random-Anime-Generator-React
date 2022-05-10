@@ -255,7 +255,7 @@ body {
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
     .random-container{
         flex-direction: column;
     }
