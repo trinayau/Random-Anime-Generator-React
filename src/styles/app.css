@@ -14,6 +14,7 @@ body {
 .hero {
     background-color: var(--primary);
     height:fit-content;
+    padding: 15px;
 }
 
 .hero a{
@@ -27,6 +28,9 @@ body {
     padding: 50px;
 }
 
+.hero-container{
+    display: flex;
+}
 
 .hero button {
     color: #E07A5F;
@@ -249,9 +253,53 @@ body {
     border-radius: 10px;
 }
 
-@media screen and (min-width: 700px){
-    #doggos {
-        grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 800px){
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1{
+        padding: 0px;
+        margin: 2px;
+        text-align: center;
+
+    }
+
+    .doggo-hero {
+        background-size: 400px;
+        width: 400px;
+        height: 350px;  
+    }
+    .random-container{
+        flex-direction: column;
+    }
+
+    .show-card {
+        width: 80%;
+        margin: 15px;
+        height: auto;
+    }
+
+    .show-card button {
+        font-size: 15px;
+    }
+
+    .buttons {
+        width: 80%;
+        justify-content: space-around;
+    }
+
+    .random-container img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .random-container {
+        margin: 10px;
     }
 }
 

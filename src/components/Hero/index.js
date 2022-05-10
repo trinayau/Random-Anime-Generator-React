@@ -13,9 +13,8 @@ const Hero = () => {
     }
     return ( 
         <div className='hero'>
-
-        <div style={{display: "flex"}}>
-            <div>
+        <div className='hero-container'>
+        <div className='title'>
         <a href='/'><h1>Random Anime <br/>Generator</h1></a>
         <button onClick={handleClick}>Give me anime!</button>
         </div>
